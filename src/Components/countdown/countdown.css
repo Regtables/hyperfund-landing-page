@@ -1,0 +1,30 @@
+.hyperfund__countdown-container{
+  display: flex;
+}
+
+.hyperfund__countdown-text{
+  margin-bottom: 0.5rem;
+}
+
+.hyperfund__countdown-text h2{
+  font-family: var(--font-family);
+  font-size: 18px;
+}
+
+.hyperfund__countdown-container div{
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hyperfund__countdown-container p{
+  font-family: var(--font-family);
+  margin: 0 auto;
+}
+
+.hyperfund__countdown-container h3{
+  font-family: var(--font-family);
+  padding: 1rem;
+  border: 1.5px black solid;
+  border-radius: 5px;
+}
