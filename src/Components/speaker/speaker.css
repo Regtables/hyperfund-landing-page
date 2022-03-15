@@ -14,6 +14,10 @@
   width: 50%;
 }
 
+.hyperfund__speaker-right p {
+  color: rgb(107, 106, 106);
+}
+
 .hyperfund__speaker-right_title{
   margin-bottom: 0.5rem;
 }

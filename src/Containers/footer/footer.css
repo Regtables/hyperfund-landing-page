@@ -1,0 +1,18 @@
+.hyperfund__footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hyperfund__footer p{
+  color: gray;
+}
+
+.hyperfund__footer-top{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#first{
+  margin-right: 1rem;
+}
