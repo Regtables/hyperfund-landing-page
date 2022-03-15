@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Navbar } from './Components'
-import { Header, Learn, Schedule, Speakers, CTABig, Footer } from './Containers'
+import { Header, Benefits, Schedule, Speakers, CTABig, Footer } from './Containers'
 
 import './App.css'
 
@@ -15,7 +15,7 @@ const App = () => {
               <Header />
           </header>
           <main>
-              <Learn />
+              <Benefits />
               <Schedule />
               <Speakers />
               <CTABig />
