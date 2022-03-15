@@ -1,0 +1,18 @@
+.hyperfund__speakers{
+  border-bottom: steelblue solid 1px;
+}
+
+.hyperfund__speakers-heading{
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.hyperfund__speakers-heading h2{
+  font-size: 36px;
+}
+
+.hyperfund__speakers-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}

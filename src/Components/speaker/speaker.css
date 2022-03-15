@@ -1,0 +1,27 @@
+.hyperfund__speaker{
+  display: flex;
+  justify-content: center;
+}
+
+.hyperfund__speaker-left{
+  margin-right: 2rem;
+}
+
+.hyperfund__speaker-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.hyperfund__speaker-right_title{
+  margin-bottom: 0.5rem;
+}
+
+.hyperfund__speaker-right_title p{
+  font-size: 14px;
+}
+
+.hyperfund__speaker-right_description p{
+  font-size: 14px;
+}

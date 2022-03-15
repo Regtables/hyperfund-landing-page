@@ -5,7 +5,7 @@ import './benefits.css'
 
 const Benefits = () => {
   return (
-    <div className = 'hyperfund__benefits section__margin'>
+    <div className = 'hyperfund__benefits section__padding'>
         <div className = 'hyperfund__benefits-heading'>
             <h1>What Will You Learn?</h1>
         </div>

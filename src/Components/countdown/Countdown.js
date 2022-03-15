@@ -71,7 +71,7 @@ const Countdown = () => {
     return { textDay, textHour, textMinute, textSecond }
   }
 
-  setInterval(countdown, 1000);
+  // setInterval(countdown, 1000);
 
   return (
     <div className = 'hyperfund__countdown'>
