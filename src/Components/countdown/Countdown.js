@@ -1,13 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './countdown.css'
 
-const Countdown = () => {
-
-  let textDay;
-  let textHour;
-  let textMinute;
-  let textSecond;
+const Countdown = ({date}) => {
+  const [second, setSecond ] = useState(0)
+  const [minute, setMinute ] = useState(0)
+  const [hour, setHour ] = useState(0)
+  const [day, setDay ] = useState(0)
 
   function countdown (){
     const countDate = new Date('April 15, 2022 00:00:00').getTime();
@@ -19,10 +18,15 @@ const Countdown = () => {
     const hour =  minute*60;
     const day = hour*24;
 
-    textDay = Math.floor(gap/day);
-    textHour = Math.floor((gap % day)/hour);
-    textMinute = Math.floor((gap % hour)/minute);
-    textSecond = Math.floor((gap % minute)/second);
+    let textDay = Math.floor(gap/day);
+    let textHour = Math.floor((gap % day)/hour);
+    let textMinute = Math.floor((gap % hour)/minute);
+    let textSecond = Math.floor((gap % minute)/second);
+
+    setSecond(textSecond)
+    setMinute(textMinute)
+    setHour(textHour)
+    setDay(textDay)
 
     // console.log(textSecond)
 
@@ -42,58 +46,57 @@ const Countdown = () => {
     //   textHour = '0' + textHour
     // }
 
-    if(textSecond >= 10){
-      document.getElementById('second').innerHTML = textSecond;
-    } else{
+    // if(textSecond >= 10){
+    //   document.getElementById('second').innerHTML = textSecond;
+    // } else{
     
-      document.getElementById('second').innerHTML = '0' + textSecond;
-    }
+    //   document.getElementById('second').innerHTML = '0' + textSecond;
+    // }
 
-    if(textMinute >= 10){
-      document.querySelectorAll('.minute').innerHTML = textMinute;
-    } else{
+    // if(textMinute >= 10){
+    //   document.querySelectorAll('.minute').innerHTML = textMinute;
+    // } else{
     
-      document.querySelectorAll('.minute').innerHTML = '0' + textMinute;
-    }
+    //   document.querySelectorAll('.minute').innerHTML = '0' + textMinute;
+    // }
 
-    if(textHour <= 9){
-      document.querySelector('.hour').innerHTML = '0' + textHour;
-    } else{
-      document.querySelector('.hour').innerHTML = textHour;
-    }
+    // if(textHour <= 9){
+    //   document.querySelector('.hour').innerHTML = '0' + textHour;
+    // } else{
+    //   document.querySelector('.hour').innerHTML = textHour;
+    // }
 
-    if(textDay >= 10){
-      document.querySelector('.day').innerHTML = textDay;
-    } else{
-      document.querySelector('.day').innerHTML = textDay;
-    }
+    // if(textDay >= 10){
+    //   document.querySelector('.day').innerHTML = textDay;
+    // } else{
+    //   document.querySelector('.day').innerHTML = textDay;
+    // }
 
     return { textDay, textHour, textMinute, textSecond }
   }
 
-  // setInterval(countdown, 1000);
+  setInterval(countdown, 1000);
 
   return (
     <div className = 'hyperfund__countdown'>
         <div className = 'hyperfund__countdown-text'>
           <h2>Webinar starts in:</h2>
-          <p>{textSecond}</p>
         </div>
         <div className = 'hyperfund__countdown-container'>
             <div className = 'hyperfund__countdown-container_days'>
-                <h3 id = 'day'>time</h3>
+                <h3 id = 'day'>{day}</h3>
                 <p>Days</p>  
             </div>
             <div className = 'hyperfund__countdown-container_hours'>
-                <h3 id = 'hour'>time</h3>
+                <h3 id = 'hour'>{hour}</h3>
                 <p>Hours</p>
             </div>
             <div className = 'hyperfund__countdown-container_minute'>
-                <h3 className = 'minute'>time</h3>
+                <h3 className = 'minute'>{minute}</h3>
                 <p>Minutes</p>
             </div>
             <div className = 'hyperfund__countdown-container_secs'>
-                <h3 id= 'second'>time</h3>
+                <h3 id= 'second'>{second}</h3>
                 <p>Seconds</p>
             </div>
         </div>
