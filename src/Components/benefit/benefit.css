@@ -23,3 +23,9 @@
 .hyperfund__benefit-title{
   margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 450px) {
+  .hyperfund__benefit{
+    margin-bottom: 2rem;
+  }
+}

@@ -6,17 +6,27 @@
 .hyperfund__benefits-content{
   justify-content: space-between;
   display: flex;
-  margin-bottom: 5rem;
+  
   /* flex-wrap: wrap; */
 }
 
 .hyperfund__benefits-heading{
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
+  margin-bottom: 4rem;
 }
 
 .hyperfund__benefits-heading h1{
   font-size: 40px;
+}
+
+@media screen and (max-width: 450px) {
+  .hyperfund__benefits-content{
+    flex-direction: column;
+  }
+
+  .hyperfund__benefits-heading{
+    text-align: center;
+  }
 }
 

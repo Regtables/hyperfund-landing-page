@@ -32,9 +32,40 @@ h1, h2, h3, h4, h5, h6{
   color: var(--color-fontHeading);
 }
 
+@media screen and (max-width: 1180px) {
+  .section__padding{
+    padding: 2rem 4rem;
+  }
+
+  .section__margin{
+    margin: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .section__padding{
+    padding: 2rem 3rem;
+  }
+
+  .section__margin{
+    margin: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section__padding{
+    padding: 2rem 1rem;
+  }
+
+  .section__margin{
+    margin: 2rem 1rem;
+  }
+}
+
+
 .scale-up-hor-right {
-	-webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: scale-up-hor-right 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-right 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 /* ----------------------------------------------

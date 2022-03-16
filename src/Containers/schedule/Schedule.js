@@ -38,8 +38,8 @@ const schedule  = [
 
 const Schedule = () => {
   return (
-    <div className = 'hyperfund__schedule section__padding' id = 'schedule'>
-        <div className = 'hyperfund__schedule-container'>
+    <div className = 'hyperfund__schedule section__padding'>
+        <div className = 'hyperfund__schedule-container' id = 'schedule'>
             <div className = 'hyperfund__schedule-container_left'>
                 <div className = 'hyperfund_schedule-container_left-title'>
                     <h2>Webinar Schedule</h2>

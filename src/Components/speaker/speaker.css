@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width:80%;
 }
 
 .hyperfund__speaker-right p {
@@ -24,8 +24,15 @@
 
 .hyperfund__speaker-right_title p{
   font-size: 14px;
+  margin-top: 0.5rem;
 }
 
 .hyperfund__speaker-right_description p{
   font-size: 14px;
+}
+
+@media screen and (max-width: 1179px) {
+  .hyperfund__speaker-right p {
+    font-size: 12px;
+  }
 }

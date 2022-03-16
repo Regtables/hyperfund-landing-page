@@ -66,7 +66,7 @@ const Countdown = ({date}) => {
                 <h3 className = 'minute'>{minute}</h3>
                 <p>Minutes</p>
             </div>
-            <div className = 'hyperfund__countdown-container_secs'>
+            <div className = 'hyperfund__countdown-container_secs' id = 'secs'>
                 <h3 id= 'second'>{second}</h3>
                 <p>Seconds</p>
             </div>

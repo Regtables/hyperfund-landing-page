@@ -101,3 +101,51 @@
   align-items: flex-start; */
   margin-bottom: 0.5rem;
 }
+
+@media screen and (max-width: 1179px) {
+  .hyperfund__schedule-container_left{
+    margin-right: 2rem;
+  }
+
+  .hyperfund_schedule-container_right-schedule_agenda-right_description{
+    width: 100%;
+  }
+
+  .hyperfund_schedule-container_right-schedule_agenda-right_description p{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hyperfund__schedule-container{
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .hyperfund__schedule-container_left{
+    margin-right: 0;
+  }
+
+  .hyperfund_schedule-container_left-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    margin-bottom: 2rem;
+  }
+
+  .hyperfund__schedule-container_left-description{
+    width: 100%;
+    text-align: center;
+  }
+  .hyperfund__schedule-container_left-cta{
+    display: flex;
+    justify-content: center;
+  }
+
+  .hyperfund__schedule-container_left-countdown{
+    display: flex;
+    justify-content: center;
+  }
+}

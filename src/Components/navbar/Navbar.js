@@ -5,14 +5,14 @@ import { HiOutlineMenu, HiX } from 'react-icons/hi'
 import './navbar.css'
 
 const Links = () => {
- return ( 
+  return ( 
     <>
       <a href = '#home'><p>Home</p></a>
       <a href = '#benefits'><p>Benefits</p></a>
       <a href = '#schedule'><p>Schedule</p></a>
       <a href = '#speakers'><p>Speakers</p></a>
     </>
-)
+  )   
 }
 
 const Navbar = () => {
