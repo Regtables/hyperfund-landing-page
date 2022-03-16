@@ -9,7 +9,7 @@ const Countdown = ({date}) => {
   const [day, setDay ] = useState(0)
 
   function countdown (){
-    const countDate = new Date('April 15, 2022 00:00:00').getTime();
+    const countDate = new Date(date).getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
 
@@ -23,56 +23,27 @@ const Countdown = ({date}) => {
     let textMinute = Math.floor((gap % hour)/minute);
     let textSecond = Math.floor((gap % minute)/second);
 
+    if(textSecond < 10){
+      textSecond = '0' + textSecond
+    }
+
+    if(textMinute < 10){
+      textMinute = '0' + textMinute
+    }
+
+    if(textHour < 10){
+      textHour = '0' + textHour
+    }
+
+    if(textDay < 10){
+      textDay = '0' + textDay
+    }
+
     setSecond(textSecond)
     setMinute(textMinute)
     setHour(textHour)
     setDay(textDay)
 
-    // console.log(textSecond)
-
-    // if(textSecond < 10){
-    //   textSecond = '0' + textSecond
-    // }
-
-    // if(textMinute < 10){
-    //   textMinute = '0' + textMinute
-    // }
-
-    // if(textHour < 10){
-    //   textHour = '0' + textHour
-    // }
-
-    // if(textHour < 10){
-    //   textHour = '0' + textHour
-    // }
-
-    // if(textSecond >= 10){
-    //   document.getElementById('second').innerHTML = textSecond;
-    // } else{
-    
-    //   document.getElementById('second').innerHTML = '0' + textSecond;
-    // }
-
-    // if(textMinute >= 10){
-    //   document.querySelectorAll('.minute').innerHTML = textMinute;
-    // } else{
-    
-    //   document.querySelectorAll('.minute').innerHTML = '0' + textMinute;
-    // }
-
-    // if(textHour <= 9){
-    //   document.querySelector('.hour').innerHTML = '0' + textHour;
-    // } else{
-    //   document.querySelector('.hour').innerHTML = textHour;
-    // }
-
-    // if(textDay >= 10){
-    //   document.querySelector('.day').innerHTML = textDay;
-    // } else{
-    //   document.querySelector('.day').innerHTML = textDay;
-    // }
-
-    return { textDay, textHour, textMinute, textSecond }
   }
 
   setInterval(countdown, 1000);

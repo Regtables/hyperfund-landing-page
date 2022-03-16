@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Navbar } from './Components'
+import { Navbar, Partition } from './Components'
 import { Header, Benefits, Schedule, Speakers, CTABig, Footer } from './Containers'
 
 import './App.css'
@@ -12,13 +12,20 @@ const App = () => {
               <nav>
                   <Navbar />
               </nav>
-              <Header />
+              <Header 
+                    date = 'April 15, 2022'
+                    time = '11:00 AM' 
+              />
           </header>
           <main>
               <Benefits />
+                <Partition />
               <Schedule />
+                <Partition />
               <Speakers />
+                <Partition />
               <CTABig />
+                <Partition />
           </main>
           <footer>
               <Footer />

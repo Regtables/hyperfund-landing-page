@@ -2,4 +2,13 @@
 
 :root{
   --font-family: 'Open Sans', sans-serif;
+
+  --color-accent: cornflowerblue;
+  --color-fontHeading: #414656;
+  --color-buttonAccent: #EF6E52;
+  --color-partition: rgb(218, 228, 247);
+  --color-bg: #e7f5fa;
+  --color-fontParagraph: #476a92;
+  --color-button: cornflowerblue;
+  --color-buttonFont: #fff;
 }

@@ -1,6 +1,6 @@
 .hyperfund__schedule{
-  margin-top: 4rem;
-  border-bottom: lightsteelblue 1px solid;
+  /* margin-top: 4rem; */
+  /* border-bottom: lightsteelblue 1px solid; */
 }
 
 .hyperfund__schedule-container{
@@ -17,7 +17,7 @@
 
 .hyperfund_schedule-container_left-title{
   margin-bottom: 2rem;
-  font-size: 26px;
+  font-size: 32px;
 }
 
 .hyperfund__schedule-container_left-description{
@@ -45,7 +45,7 @@
 .hyperfund__schedule-container_left-cta p {
   padding: 1rem 2rem;
   text-transform: uppercase;
-  background: cornflowerblue;
+  background: var(--color-button);
   color: #fff;
   font-weight: 500;
   border-radius: 3px;
@@ -74,7 +74,7 @@
 .hyperfund_schedule-container_right-schedule_agenda-left_bar{
   height: 50px;
   width: 5px;
-  background: cornflowerblue;
+  background: var(--color-buttonAccent);
   margin: 1rem 0;
 }
 
@@ -82,7 +82,7 @@
   min-width: 100px;
   display: flex;
   justify-content: center;
-  background: cornflowerblue;
+  background: var(--color-buttonAccent);
   border-radius: 10px;
 }
 

@@ -2,11 +2,18 @@ import React from 'react'
 
 import './CTASmall.css'
 
+import video from '../../Assets/Vidoes/CTA-video.mp4'
+import hyperverse from '../../Assets/Images/hyperverse.jpeg'
+
 const CTASmall = () => {
   return (
     <div className = 'hyperfund__ctaSmall'>
         <div className = 'hyperfund__ctaSmall-video'>
-            <video src = 'https://www.youtube.com/watch?v=LO2b1T7mgt0' controls ></video>
+            {/* <video controls poster preload>
+                <source src = {video}></source>
+            </video> */}
+            <img src = {hyperverse} />
+            {/* <embed src = 'https://www.youtube.com/watch?v=LO2b1T7mgt0' ></embed> */}
         </div>
         <div className = 'hyperfund__ctaSmall-form'>
             <form>

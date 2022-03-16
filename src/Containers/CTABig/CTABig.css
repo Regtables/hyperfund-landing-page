@@ -1,5 +1,5 @@
 .hyperfund__cta{
-  border-bottom: rgb(201, 198, 198) solid 1px;
+  /* border-bottom: rgb(201, 198, 198) solid 1px; */
 }
 .hyperfund__cta-heading{
   display: flex;
@@ -28,12 +28,12 @@
   justify-content: center;
 }
 
-.hyperfund__cta-content_btn p {
+/* .hyperfund__cta-content_btn p {
   padding: 1rem 2.5rem;
   background: cornflowerblue;
   border-radius: 5px;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-}
+} */
 

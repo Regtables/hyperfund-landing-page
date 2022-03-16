@@ -26,5 +26,6 @@
   font-family: var(--font-family);
   padding: 1rem;
   border: 1.5px black solid;
+  font-size: 26px;
   border-radius: 5px;
 }

@@ -1,0 +1,13 @@
+.hyperfund__button-registerNow{
+  display: flex;
+}
+
+.hyperfund__button-registerNow p{
+  padding: 1rem 2.5rem;
+  background: var(--color-button);
+  text-transform: uppercase;
+  color: var(--color-buttonFont);
+  background: corn;
+  border-radius: 5px;
+  cursor: pointer;
+}

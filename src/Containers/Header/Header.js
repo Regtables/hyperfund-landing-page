@@ -4,7 +4,7 @@ import { Countdown, CTASmall } from '../../Components'
 
 import './header.css'
 
-const Header = () => {
+const Header = ({date, time}) => {
   return (
     <div className = 'hyperfund__header section__margin'>
         <div className = 'hyperfund__header-container'>
@@ -12,12 +12,12 @@ const Header = () => {
                 <div className = 'hyperfund__header-container_left-when'>
                     <div className = 'hyperfund__header-container_left-when_day'>
                         <h3>When:</h3>
-                        <p>24 Jan, 2022</p>
+                        <p>{date}</p>
                     </div>
 
                     <div className = 'hyperfund__header-container_left-when_hour'>
                         <h3>Hour:</h3>
-                        <p>11:00 AM</p>
+                        <p>{time}</p>
                     </div>
                 </div>
 
@@ -30,7 +30,7 @@ const Header = () => {
                 </div>
 
                 <div className = 'hyperfund__header-container_left-countdown'>
-                    <Countdown />
+                    <Countdown date = 'April 15, 2022 00:00:00' />
                 </div>
 
                 <div className = 'hyperfund__header-container_left-btn'>

@@ -14,14 +14,20 @@ a{
   margin: 2rem 8rem;
 }
 
+/* .app{
+  background: var(--color-bg);
+} */
+
 .section__padding{
   padding: 5rem 8rem;
 }
 
 p{
   font-family: var(--font-family);
+  color: var(--color-fontParagraph);
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: var(--font-family);
+  color: var(--color-fontHeading);
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Countdown } from '../../Components'
+import { Countdown, RegisterNow } from '../../Components'
 
 import './schedule.css'
 
@@ -53,10 +53,10 @@ const Schedule = () => {
                     </div>
                 </div>
                 <div className = 'hyperfund__schedule-container_left-cta'>
-                    <p>register now</p>
+                    <RegisterNow />
                 </div>
                 <div className = 'hyperfund__schedule-container_left-countdown'>
-                    <Countdown />
+                    <Countdown date = 'April 15, 2022 00:00:00'/>
                 </div>
             </div>
             <div className = 'hyperfund__schedule-container_right'>

@@ -1,6 +1,9 @@
 import React from 'react'
 
+import RegisterNow from '../../Components/buttons/registerNow/RegisterNow'
+
 import './CTABig.css'
+
 
 const CTABig = () => {
   return (
@@ -13,7 +16,7 @@ const CTABig = () => {
                 <p>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla, </p>
             </div>
             <div className = 'hyperfund__cta-content_btn'>
-                <p>Register Now</p>
+                <RegisterNow />
             </div>
         </div>
     </div>
