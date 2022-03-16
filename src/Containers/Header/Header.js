@@ -6,7 +6,7 @@ import './header.css'
 
 const Header = ({date, time}) => {
   return (
-    <div className = 'hyperfund__header section__margin'>
+    <div className = 'hyperfund__header section__margin' id = 'home'>
         <div className = 'hyperfund__header-container'>
             <div className = 'hyperfund__header-container_left'>
                 <div className = 'hyperfund__header-container_left-when'>

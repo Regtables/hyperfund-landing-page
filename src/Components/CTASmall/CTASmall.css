@@ -1,6 +1,7 @@
 .hyperfund__ctaSmall{
   border: 1px solid rgb(197, 195, 195);
   border-radius: 10px;
+  /* box-shadow: 4px 4px 3px var(--color-button), -4px -4px 3px var(--color-button); */
 }
 
 .hyperfund__ctaSmall video{

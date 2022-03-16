@@ -5,7 +5,7 @@ import './speakers.css'
 
 const Speakers = () => {
   return (
-    <div className = 'hyperfund__speakers section__padding'>
+    <div className = 'hyperfund__speakers section__padding' id = 'speakers'>
         <div className = 'hyperfund__speakers-heading'>
             <h2>Webinar Speakers</h2>
         </div>

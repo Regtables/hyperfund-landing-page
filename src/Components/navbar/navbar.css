@@ -1,8 +1,44 @@
 .hyperfund__navbar{
+  position: fixed;
+  right: 20px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50% / 50%;
+  background: var(--color-accent);
+  
   /* margin: 1rem 2rem; */
   display: flex;
-  padding: 1rem 4rem;
-  justify-content: flex-end;
+  /* padding: 1rem 4rem; */
+  justify-content: center;
   align-items: center;
   border-bottom: 0.5px solid rgb(224, 224, 224);
+  z-index: 3;
+  cursor: pointer;
+  transition: width 0.5s, height 0.5s;
+}
+
+.hyperfund__navbar:hover{
+  width:4.5rem;
+  height:4.5rem;
+}
+
+.hyperfund__navbar-hamburger{
+  padding-top: 3px;
+}
+
+.hyperfund__navbar-hamburger_container-links{
+  position: fixed;
+  right: 100px;
+  top: 40px;
+  padding: 2rem 2rem;
+  background: var(--color-button);
+  border-radius: 10px;
+  cursor:initial;
+
+}
+
+.hyperfund__navbar-hamburger_container-links p{
+  color: #fff;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }

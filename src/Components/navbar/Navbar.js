@@ -7,10 +7,10 @@ import './navbar.css'
 const Links = () => {
  return ( 
     <>
-      <a><p>Home</p></a>
-      <a><p>Benefits</p></a>
-      <a><p>Schedule</p></a>
-      <a><p>Speakers</p></a>
+      <a href = '#home'><p>Home</p></a>
+      <a href = '#benefits'><p>Benefits</p></a>
+      <a href = '#schedule'><p>Schedule</p></a>
+      <a href = '#speakers'><p>Speakers</p></a>
     </>
 )
 }
@@ -27,7 +27,7 @@ const Navbar = () => {
             }
             {toggleMenu && (
                 <div className = 'hyperfund__navbar-hamburger_container'>
-                    <div className = 'hyperfund__navbar-hamburger_container-links'>
+                    <div className = 'hyperfund__navbar-hamburger_container-links scale-up-hor-right'>
                         <Links />
                     </div>
                 </div>
