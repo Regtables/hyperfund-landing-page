@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import { Countdown, CTASmall } from '../../Components'
 
 import './header.css'
 
 const Header = ({date, time}) => {
+  useEffect(()=> {
+      Aos.init({duration: 2000})
+  }, [])
+
   return (
     <div className = 'hyperfund__header section__margin' id = 'home'>
         <div className = 'hyperfund__header-container'>
@@ -41,7 +47,7 @@ const Header = ({date, time}) => {
             </div>
 
             <div className = 'hyperfund__header-container_right'>
-                <div className = 'hyperfund__header-container_right-cta'>
+                <div className = 'hyperfund__header-container_right-cta' data-aos = 'fade-left' data-aos-once = 'true'>
                     <CTASmall />
                 </div>
             </div>

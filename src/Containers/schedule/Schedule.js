@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 import { Countdown, RegisterNow } from '../../Components'
 
 import './schedule.css'
@@ -37,6 +40,9 @@ const schedule  = [
 ]
 
 const Schedule = () => {
+  useEffect(()=> {
+      Aos.init({duration: 500})
+  },[])
   return (
     <div className = 'hyperfund__schedule section__padding'>
         <div className = 'hyperfund__schedule-container' id = 'schedule'>
@@ -63,23 +69,26 @@ const Schedule = () => {
                 <div className = 'hyperfund_schedule-container_right-schedule'>
                     {
                       schedule.map((agenda, index) => (
-                        <div className = 'hyperfund_schedule-container_right-schedule_agenda' key = {index}>
+                        <div className = 'hyperfund_schedule-container_right-schedule_agenda'>
+
                             <div className = 'hyperfund_schedule-container_right-schedule_agenda-left'>
-                                <div className = 'hyperfund_schedule-container_right-schedule_agenda-left_time'>
+                                <div className = 'hyperfund_schedule-container_right-schedule_agenda-left_time' data-aos = 'fade' data-aos-delay = {`${200*index}`} data-aos-once= 'true' data-aos-offset = '-200'>
                                     <p>{agenda.time}</p>
                                 </div>
+
                                 { index < schedule.length -1
-                                    ? <div className = 'hyperfund_schedule-container_right-schedule_agenda-left_bar'>
+                                    ? <div className = 'hyperfund_schedule-container_right-schedule_agenda-left_bar' data-aos = 'fade' data-aos-delay = {`${300*index-1}`} data-aos-once= 'true'>
 
                                       </div>
                                     : <div></div>
                                 }
                             </div>
+
                             <div className = 'hyperfund_schedule-container_right-schedule_agenda-right'>
-                                <div className = 'hyperfund_schedule-container_right-schedule_agenda-right_title' >
+                                <div className = 'hyperfund_schedule-container_right-schedule_agenda-right_title' data-aos = 'fade' data-aos-delay = {`${200*index}`} data-aos-once= 'true' data-aos-offset = '-200'>
                                     <h3>{agenda.title}</h3>
                                 </div>
-                                <div className = 'hyperfund_schedule-container_right-schedule_agenda-right_description' >
+                                <div className = 'hyperfund_schedule-container_right-schedule_agenda-right_description' data-aos = 'fade-left' data-aos-delay = {`${200*index-1}`} data-aos-once= 'true' >
                                     <p>{agenda?.description}</p>
                                 </div>
                             </div>

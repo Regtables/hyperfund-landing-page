@@ -1,5 +1,6 @@
 import React from 'react'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import { Navbar, Partition } from './Components'
 import { Header, Benefits, Schedule, Speakers, CTABig, Footer } from './Containers'
 
